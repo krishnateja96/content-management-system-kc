@@ -1,0 +1,10 @@
+<nav>
+    <a href="/">All Blogs</a>
+    <a href="/login">Admin Panel</a>
+    <% if(typeof(isAdmin) !== 'undefined' && isAdmin) {%>
+        <a href="/blogs/new">Add Blog</a>
+    <%}%>
+    <% if(typeof(isAdmin) !== 'undefined' && isAdmin) {%>
+        <a href="/logout">Logout</a>
+    <%}%>
+</nav>

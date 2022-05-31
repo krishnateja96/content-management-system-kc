@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>
+        <%= blog.title %>
+    </title>
+</head>
+
+<body>
+    <%- include('layouts/header'); -%>
+    <%- include('layouts/nav'); -%>
+    <div>
+        <div class="content" style="justify-content: right;">
+            <a href="/" style="background-color: cyan;">Back</a>
+        </div>
+
+        <div class="content">
+            <img src="/images/<%= blog.image %>" class="custom-img" alt="...">
+        </div>
+        <div class="content">
+            <img src="/images/<%= blog.image %>" style="width: 60px; height: 60px; align-self: center; border-radius: 5px;">
+            <div style="margin: 0px 10px;">
+                <h5>
+                    <%= blog.title %>
+                </h5>
+                <p>
+                    <%= blog.timeCreated.toLocaleDateString() %> %>
+                </p>
+            </div>
+        </div>
+        <div>
+            <p>
+                <%- blog.description %>
+            </p>
+        </div>
+        <%- include('layouts/footer'); -%>
+    </div>
+
+</body>
+
+</html>
