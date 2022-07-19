@@ -5,7 +5,7 @@ Final project for web development course
 How to run the app:-
 1 - Clone the project
 2 - run 'npm install' to install the dependencies
-3 - make sure to have a mongodb connection
+3 - make sure to have a mongodb connection (See https://www.mongodb.com/try/download/community to download and install the DB.)
 4 - run 'node index' to start the server
 
 Reason for choosing Apache License 2.0 :-
